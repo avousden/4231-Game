@@ -5,10 +5,13 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+     NavMeshAgent agent;
+
    private void OnEnable()
    {
-        Vector3 targetPostition = GameObject.Find("Target").transform.position;
-        GetComponent<NavMeshAgent>().SetDestination(targetPostition);
+        Vector3 targetPosition = GameObject.Find("Target").transform.position;
+        agent = GetComponent<NavMeshAgent>();
+        agent.SetDestination(targetPosition);
     
    }
     // Start is called before the first frame update
@@ -22,4 +25,6 @@ public class EnemyController : MonoBehaviour
     {
         
     }
+
+    
 }

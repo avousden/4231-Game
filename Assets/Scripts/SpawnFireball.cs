@@ -6,9 +6,10 @@ public class SpawnFireball : MonoBehaviour
 {
     public GameObject firepoint;
     public List<GameObject> fireballs = new List<GameObject>();
+    //public FireballAiming fbAim;
     private GameObject fireball;
 
-    public mouseRotation mouseRot;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -31,11 +32,12 @@ public class SpawnFireball : MonoBehaviour
 
         if(firepoint != null)
         {
-            effect = Instantiate(fireball, firepoint.transform.position, Quaternion.identity);
-            if(mouseRot != null)
-            {
-                effect.transform.localRotation = mouseRot.getRotation();
-            }
+            effect = Instantiate(fireball, firepoint.transform.position, firepoint.transform.rotation);
+            // if(fbAim != null)
+            // {
+            //     effect.transform.localRotation = fbAim.GetRotation();
+            // }
+            
         }
     }
 }
