@@ -7,7 +7,11 @@ public class EnemySimpleAI : MonoBehaviour
     public float speed = 2f;
     public float rotate = 2f;
     public float waitForDeath;
+    
+    public float killValue;
     private Transform target;
+    
+    
 
     Animator animator;
 
@@ -54,6 +58,7 @@ public class EnemySimpleAI : MonoBehaviour
     {
        yield return new WaitForSeconds(waitForDeath);
         animator.SetBool("isDead", false);
+       
         Destroy(gameObject);
         
     }
