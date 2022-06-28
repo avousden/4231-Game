@@ -26,6 +26,9 @@ public class move : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A))
             rigidbody.AddForce(movementForce * -transform.right);
+
+        if(Input.GetKey(KeyCode.Space))
+            rigidbody.AddForce(movementForce * 2 * transform.up);
     }
 
     // Update is called once per frame

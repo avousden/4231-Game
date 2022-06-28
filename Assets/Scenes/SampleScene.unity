@@ -209,7 +209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &18197167
 Transform:
   m_ObjectHideFlags: 0
@@ -3530,6 +3530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotate: 4
+  waitForDeath: 0.7
 --- !u!4 &223210669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7122750978605347064, guid: b94358d495e705f4281183d6f36ba02c, type: 3}
@@ -17979,6 +17980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   rotate: 4
+  waitForDeath: 0.7
 --- !u!1001 &1033722458
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19113,6 +19115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotate: 4
+  waitForDeath: 0.7
 --- !u!1 &1097768954
 GameObject:
   m_ObjectHideFlags: 0
