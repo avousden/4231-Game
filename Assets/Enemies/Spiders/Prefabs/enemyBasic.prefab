@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 3368686013735023230}
   - component: {fileID: 3368686013735023231}
   m_Layer: 0
-  m_Name: bSpider
+  m_Name: enemyBasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

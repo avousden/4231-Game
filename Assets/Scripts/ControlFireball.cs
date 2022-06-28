@@ -29,4 +29,12 @@ public class ControlFireball : MonoBehaviour
         }
         pos = transform.position;
     }
+
+    void OnCollisionEnter (Collision col)
+    {
+        
+            speed = 0;
+            Destroy(gameObject);
+        
+    }
 }

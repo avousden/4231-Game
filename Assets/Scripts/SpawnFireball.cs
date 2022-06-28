@@ -8,6 +8,7 @@ public class SpawnFireball : MonoBehaviour
     public List<GameObject> fireballs = new List<GameObject>();
     //public FireballAiming fbAim;
     private GameObject fireball;
+    private float timeToFire = 0;
 
     
 
@@ -20,8 +21,9 @@ public class SpawnFireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButton(0) && Time.time >= timeToFire)
         {
+            timeToFire = Time.time + 1 / fireball.GetComponent<ControlFireball>().fireRate;
             spawnFireball();
         }
     }
