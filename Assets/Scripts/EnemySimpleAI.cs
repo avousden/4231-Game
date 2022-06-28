@@ -23,4 +23,12 @@ public class EnemySimpleAI : MonoBehaviour
         //move
         transform.position += transform.forward * speed * Time.deltaTime;
     }
+
+    void OnCollisionEnter (Collision col)
+    {
+        if(col.gameObject.tag.Equals("Fireball") == true)
+            speed = 0;
+            Destroy(gameObject);
+        
+    }
 }
